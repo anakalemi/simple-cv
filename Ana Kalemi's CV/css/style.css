@@ -1,0 +1,141 @@
+/*================================================================
+
+                            ANA KALEMI
+
+                      Web Systems Development
+                            02/04/2022
+  ================================================================*/
+
+/*General*/
+body {
+    background-color: #FAFAFA;
+    background-attachment: fixed;
+    font-family: "Microsoft Sans Serif", Monospaced, ui-monospace;
+    font-size: 17px;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #757575;
+}
+
+a:hover {
+    color: #FFB300;
+    text-decoration: none;
+}
+
+#page {
+    background-color: #fff;
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    #page {
+        margin: 96px auto;
+        max-width: 1060px;
+    }
+}
+
+.cv-section {
+    margin: 0;
+    padding: 60px 0;
+    border-top: 1px solid #E0E0E0;
+    position: relative;
+}
+
+/*Header*/
+#header h1 {
+    font-weight: 400;
+}
+
+#header > .cv-section {
+    border-top: 10px solid rgba(255, 128, 0, 0.45);
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#header .img-profile {
+    border-radius: 50%;
+    text-align: center;
+    animation-name: profile;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+/*animation*/
+@keyframes profile {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header-min {
+    text-align: center;
+}
+
+/*Content*/
+#profile {
+    margin-left: 40px;
+}
+
+.content h2 {
+    font-size: 23px;
+    font-weight: 300;
+    color: rgba(255, 128, 0, 0.45);
+    margin-bottom: 48px;
+    text-shadow: 2px 2px 5px rgba(169, 169, 169, 0.51);
+}
+
+.content h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.content h4 {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.to-top {
+    color: rgba(255, 128, 0, 0.45);
+    font-size: 15px;
+    text-decoration: none;
+    float: right;
+    text-shadow: 2px 2px 5px rgba(169, 169, 169, 0.51);
+}
+
+/*Grid*/
+.section-title {
+    grid-area: section-title;
+    width: 250px;
+}
+
+.section-item {
+    grid-area: section-item;
+    width: 700px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template:
+    'section-title section-item';
+    grid-gap: 5px;
+    padding: 30px;
+}
+
+/*Table*/
+th, td {
+    border-bottom: 1px solid #E0E0E0;
+    padding: 9px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table {
+    margin-left: 30px;
+}
